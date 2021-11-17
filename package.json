@@ -1,0 +1,9 @@
+{
+    "name": "team-profile",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "ISC",
+    "dependencies": {
+        "inquirer": "^6.3.1"
+    }
+}
