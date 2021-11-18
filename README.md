@@ -10,20 +10,20 @@ To install please clone this repository from GitHub and downloade Node. This app
 
 ## Usage
 
-In your integrated terminal, run 'npm i' and then 'node index.js' to run the application and answer the prompts to create your own team profile html.
+In your integrated terminal, run 'npm i' and then 'node index.js' to run the application and answer the prompts to create your own team profile html. See the gif below.
 
 ![team profile screenshot](./assets/teamprofilegenerator.jpg)
-
+<br>
 ![team profile generator gif](./assets/teamprofilegenerator.gif)
 
 
 ## Tests
 
-Run 'npm test' to run Jest for tests on constructors.
+Run 'npm run test' to run Jest for tests on constructors. Make sure scripts and test is in your package.json file. See the gif above.
 
 ## Credits
 
-Used hellp from UW BOOTCAMP week 10 OOP files.
+Used help from UW BOOTCAMP week 10 OOP files.
 
 ## Questions
 
