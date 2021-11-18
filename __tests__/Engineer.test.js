@@ -1,16 +1,38 @@
-const Engineer = require('../lib/Engineer');
+const Engineer = require("../lib/Engineer");
 
-test('creates an Engineer object', () => {
-    const engineer = new Engineer('Nicole', 90, 'nicole.elisaw@gmail', 'nicolewallace09');
-    expect(engineer.github).toEqual(expect.any(String));
-});
+describe("Engineer Class which is a subclass of Employee", () => {
+     
+    it("should create a new Engineer object", () => {
+          const eng = new Engineer("Taylor", "88", "test@gmail.com", "githubprofile");
+          expect(eng.name).toBe("Taylor");
+          expect(eng.id).toBe("88");
+          expect(eng.email).toBe("test@gmail.com");
+          expect(eng.github).toBe("githubprofile");
+     });
 
-test('gets engineer github value', () => {
-    const engineer = new Engineer('Nicole', 90, 'nicole.elisaw@gmail', 'nicolewallace09');
-    expect(engineer.getGithub()).toEqual(expect.stringContaining(engineer.github.toString()));
-});
+    it("should get the employee Name", () => {
+          const eng = new Engineer("Taylor", "88", "test@gmail.com", "githubprofile");
+          expect(eng.getName()).toBe("Taylor");
+     });
 
-test('gets role of employee', () => {
-    const engineer = new Engineer('Nicole', 90, 'nicole.elisaw@gmail', 'nicolewallace09');
-    expect(engineer.getRole()).toEqual("Engineer");
+    it("should get the employee ID", () => {
+          const eng = new Engineer("Taylor", "88", "test@gmail.com", "githubprofile");
+          expect(eng.getID()).toBe("88");
+     });
+
+     it("should get the employee email", () => {
+          const eng = new Engineer("Taylor", "88", "test@gmail.com", "githubprofile");
+          expect(eng.getEmail()).toBe("test@gmail.com");
+     });
+
+     it("should get the employee github ID", () => {
+          const eng = new Engineer("Taylor", "88", "test@gmail.com", "githubprofile");
+          expect(eng.getGithub()).toBe("githubprofile");
+     });
+
+     it("should get the employee role", () => {
+          const eng = new Engineer("Taylor", "88", "test@gmail.com", "githubprofile");
+          expect(eng.getRole()).toBe("Engineer");
+     });
+   
 });
